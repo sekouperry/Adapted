@@ -1,0 +1,8 @@
+<?php
+/**
+ * @file
+ * Code for the Adapted CCK feature.
+ */
+
+include_once 'adapted_cck.features.inc';
+

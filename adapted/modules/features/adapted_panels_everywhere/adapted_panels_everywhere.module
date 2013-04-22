@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Adapted Panels Everywhere feature.
+ */
+
+include_once 'adapted_panels_everywhere.features.inc';

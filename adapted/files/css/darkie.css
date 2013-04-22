@@ -1,0 +1,46 @@
+html{
+  background-image: url(http://fc08.deviantart.net/fs71/f/2011/220/0/d/adapted_background_by_rensd-d45u9mh.jpg) !important;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #333 !important;;
+  background-position: center center;
+}
+
+html,body {
+  color:#BBB !important;
+}
+
+body{
+  background-color: transparent !important;
+}
+
+#main,
+#main .form-actions,
+body #footer > .container {
+  background-color: rgba(0,0,0,0.8) !important;
+}
+
+#main .form-actions,
+body #footer > .container {
+  border-top: 2px solid #A80202 !important;
+}
+
+#main .page-header,
+#main legend {
+  border-bottom: 2px solid #A80202 !important;
+  color: rgb(232, 255, 61) !important;
+}
+
+#main form .description {
+  color: #EEE !important;
+}
+
+.maintenance-page #main-wrapper #main .content form {
+  border: 2px solid #A80202 !important;
+}
+
+#main h5{
+  color: rgb(0, 216, 17);
+  font-size: 1.5em;
+}
+

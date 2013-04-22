@@ -1,0 +1,52 @@
+<?php
+
+/**
+* Implement hook_install().
+* Perform actions to set up the site for this profile.
+*/
+function adapted_install() {
+
+  require_once(drupal_get_path('profile', 'adapted') . '/files/includes/install.formats.inc');
+  adapted_add_default_text_formats_and_perms();
+
+  if (module_exists('wysiwyg')) {
+    require_once(drupal_get_path('profile', 'adapted') . '/files/includes/install.wysiwyg.inc');
+    adapted_set_wysiwyg_settings();
+  }
+
+  require_once(drupal_get_path('profile', 'adapted') . '/files/includes/install.themes.inc');
+  adapted_themes_build();
+/*
+  require_once(drupal_get_path('profile', 'adapted') . '/files/includes/install.perms.inc');
+  adapted_perms_build(); 
+
+  require_once(drupal_get_path('profile', 'adapted') . '/files/includes/install.menus.inc');
+  adapted_menus_build();
+*/ 
+  require_once(drupal_get_path('profile', 'adapted') . '/files/includes/install.speed.inc');
+  adapted_performance_settings();
+/*
+  require_once(drupal_get_path('profile', 'adapted') . '/files/includes/install.blocks.inc');
+  adapted_blocks_build();
+ 
+  // set a slogan
+  variable_set('site_slogan', st('Powered by Adapted...'));
+
+  // set the temp dir
+  variable_set('file_temporary_path', '/tmp');
+*/
+}
+
+/**
+ * Sets the installation theme for adapted profile
+ */
+/* function _adapted_set_theme($theme) {
+  if ($GLOBALS['theme'] != $theme) {
+    unset($GLOBALS['theme']);
+
+   drupal_static_reset();
+    $GLOBALS['conf']['maintenance_theme'] = $theme;
+    _drupal_maintenance_theme();
+  }
+}
+*/

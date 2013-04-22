@@ -1,0 +1,14 @@
+name = Adapted Themes
+description = Enabled Adapted Themes
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = adapted_themes
+dependencies[] = ctools
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[variable][] = theme_adaptivetheme_files_directory
+features[variable][] = theme_adaptivetheme_settings
+features[variable][] = theme_default
+

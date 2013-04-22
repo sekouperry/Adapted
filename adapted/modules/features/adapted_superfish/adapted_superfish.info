@@ -1,0 +1,10 @@
+name = Adapted Superfish
+description = Superfish Menu Settings
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = adapted_superfish
+dependencies[] = fe_block
+dependencies[] = superfish
+features[fe_block_settings][] = superfish-1
+features[features_api][] = api:1
